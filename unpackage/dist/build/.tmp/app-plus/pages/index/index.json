@@ -1,0 +1,36 @@
+{
+  "titleNView": {
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#4782FF",
+    "searchInput": {
+      "align": "left",
+      "backgroundColor": "#f8f8f8",
+      "borderRadius": "16px",
+      "placeholder": "请输入搜索内容",
+      "placeholderColor": "#aaaaaa",
+      "disabled": true
+    },
+    "buttons": [
+      {
+        "float": "left",
+        "text": "首页",
+        "fontSize": "22px",
+        "fontWeight": "bold",
+        "width": "auto",
+        "color": "#F2F2F2"
+      },
+      {
+        "float": "right",
+        "text": "",
+        "fontSrc": "/static/font/font_alijiankang/iconfont.ttf",
+        "fontSize": "22px",
+        "color": "#F2F2F2",
+        "badgeText": "1"
+      }
+    ]
+  },
+  "pullToRefresh": {
+    "support": true
+  },
+  "usingComponents": {}
+}

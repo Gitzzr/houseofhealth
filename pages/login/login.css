@@ -1,0 +1,89 @@
+.g-g-block{
+	margin-top: var(--status-bar-height);
+}
+.login-page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.regbtn{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 24upx;
+	box-sizing: border-box;
+}
+.regtxt{
+	font-size: 15px;
+}
+
+.login-logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	box-sizing: border-box;
+	margin: 100upx 80upx 140upx;
+}
+.logoimg{
+	/* width: 600upx;
+	height: 184upx; */
+	width: 400upx;
+	height: 123upx;
+}
+
+.login-items{
+	margin-top: 20upx;
+	width: 100%;
+	height: 250upx;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+	box-sizing: border-box;
+}
+.login-items input{
+	align-self: center;
+	border: 1px solid #f4f5f6;
+	border-radius: 50px;
+	width: 600upx;
+	height: 100upx;
+	padding-left: 50upx;
+	box-sizing: border-box;
+}
+.useritem{
+}
+.pwitem{
+	
+}
+
+
+.loginbtn{
+	align-self: center;
+	margin-top: 50upx;
+	width: 600upx;
+	height: 100upx;
+	line-height: 100upx;
+	background-color: #4782FF;
+	border-radius: 50px;
+	text-align: center;
+	color: #F2F2F2;
+}
+.loginbtn text{
+	margin: 50upx;
+}
+
+.forgetpw{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: center;
+	padding: 30upx 80upx;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+

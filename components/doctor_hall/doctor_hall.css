@@ -1,0 +1,41 @@
+.d-item-title{
+	font-size: 23px;
+	font-weight: bold;
+	padding: 20upx;
+	box-sizing: border-box;
+	height: 150upx;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.d-item-info{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	color: #666666;
+	font-size: 14px;
+	margin-top: 20upx;
+}
+.d-item-name{
+	margin-left: 20upx;
+}
+.d-item-yiyuan{
+	margin-left: 20upx;
+}
+.d-item-img{
+	widows: 100%;
+	text-align: center;
+	padding: 20upx;
+}
+.d-item-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	word-wrap:break-word;
+	padding: 20upx;
+	line-height: 70upx;
+	font-size: 16px;
+}

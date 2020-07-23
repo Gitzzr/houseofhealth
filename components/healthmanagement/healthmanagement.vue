@@ -1,0 +1,98 @@
+<template>
+	<view class="global-ground">
+		<view class="inquiries" >
+			<view class="inquiry-left">
+				<view class="inquiry-left-img iconfont aliicon">{{inquiries[0].inquiryleftimg}}</view>
+			</view>
+			<view class="inquiry-right">
+				<text class="inquiry-title">{{inquiries[0].inquirytitle}}</text>
+				<view class="inquiry-content">
+					<text class="inq-con-txt">{{healthmanagement[0].height}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="inquiries" >
+			<view class="inquiry-left">
+				<view class="inquiry-left-img iconfont aliicon">{{inquiries[1].inquiryleftimg}}</view>
+			</view>
+			<view class="inquiry-right">
+				<text class="inquiry-title">{{inquiries[1].inquirytitle}}</text>
+				<view class="inquiry-content">
+					<text class="inq-con-txt">{{healthmanagement[1].weight}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="inquiries" >
+			<view class="inquiry-left">
+				<view class="inquiry-left-img iconfont aliicon">{{inquiries[2].inquiryleftimg}}</view>
+			</view>
+			<view class="inquiry-right">
+				<text class="inquiry-title">{{inquiries[2].inquirytitle}}</text>
+				<view class="inquiry-content">
+					<text class="inq-con-txt">{{healthmanagement[2].pressure}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="inquiries" >
+			<view class="inquiry-left">
+				<view class="inquiry-left-img iconfont aliicon">{{inquiries[3].inquiryleftimg}}</view>
+			</view>
+			<view class="inquiry-right">
+				<text class="inquiry-title">{{inquiries[3].inquirytitle}}</text>
+				<view class="inquiry-content">
+					<text class="inq-con-txt">{{healthmanagement[3].sight}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				"inquiries":[
+					{
+						"url":"",
+						"inquiryleftimg":"\ue60a",
+						"inquirytitle":"身高",
+					},
+					{
+						"url":"",
+						"inquiryleftimg":"\ue61e",
+						"inquirytitle":"体重",
+					},
+					{
+						"url":"",
+						"inquiryleftimg":"\ue6c0",
+						"inquirytitle":"血压",
+					},
+					{
+						"url":"",
+						"inquiryleftimg":"\ue6bd",
+						"inquirytitle":"视力",
+					}
+				],
+				healthmanagement:[]
+			}
+		},
+		methods: {
+			
+		},
+		onLoad() {
+			var me = this;
+			uni.request({
+				url:this.serverUrl + '/listmag',
+				method:'GET',
+				success: (res) => {
+					console.log("888888")
+					me.healthmanagement = res.data.data;
+				}
+			})
+		}
+	}
+</script>
+
+<style>
+	@import url("healthmanagement.css");
+</style>

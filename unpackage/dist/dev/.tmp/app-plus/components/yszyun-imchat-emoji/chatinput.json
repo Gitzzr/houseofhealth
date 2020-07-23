@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app1",
+  "usingComponents": {
+    "emotion": "/components/yszyun-imchat-emoji/Emotion/index"
+  }
+}

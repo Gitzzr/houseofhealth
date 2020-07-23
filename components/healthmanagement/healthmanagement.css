@@ -1,0 +1,46 @@
+.global-ground{
+	padding-top: 10px;
+}
+.aliicon{
+	font-size: 128upx;
+}
+
+.inquiries{
+	display: flex;
+	flex-direction: row;
+	height: 280upx;
+	margin: 10px 20px 20px;
+	background-color: #4782FF;
+	border-radius: 20px;
+	/*边框盒，防止设置向外扩*/
+	box-sizing: border-box;
+	/*边框阴影*/
+	/* box-shadow:0 0 10px #06c; */
+	box-shadow:2px 2px 10px #06c;
+}
+.inquiry-left{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 25px;
+	color: #F2F2F2;
+}
+
+.inquiry-right{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: #F2F2F2;
+	margin-left: 15px;
+}
+.inquiry-title{
+	/* align-self: flex-start; */
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.inquiry-content{
+	margin-left: 20px;
+	color: #dcdee6;
+}

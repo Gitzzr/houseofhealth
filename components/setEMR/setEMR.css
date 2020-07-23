@@ -1,0 +1,49 @@
+.tables{
+	display: flex;
+	flex-direction: column;
+}
+.table_sub{
+	display: flex;
+	flex-direction: row;
+	height: 100upx;
+	line-height: 100upx;
+	padding:0px 15px 5px;
+}
+.table_sub text{
+	flex: 3;
+	color: #8C8C8C;
+}
+.table_sub .input{
+	flex: 7;
+	/* height: 100upx;
+	line-height: 100upx; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.table_sub .input input{
+	height: 100upx;
+	line-height: 100upx;
+	text-align: right;
+}
+
+.table_textarea{
+	margin-top: 10px;
+	height: 400upx;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	padding:0px 15px 5px;
+}
+.table_textarea text{
+	color: #8C8C8C;
+}
+.table_textarea textarea{
+	margin: 10px;
+	line-height: 20px;
+	width: 100%;
+}
+.tablebtn button{
+	width: 90%;
+	margin: 10px atuo;
+}

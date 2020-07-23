@@ -1,0 +1,118 @@
+
+/* 阿里图标 */
+.ali-icon{
+	font-size: 25px;
+}
+.iuser{
+	/* margin-top: 15upx; */
+	width: 100%;
+	background-color: #4782FF;
+	display: flex;
+	flex-direction: row;
+}
+.iuser .touxiang{
+	margin: 15px;
+	width: 128upx;
+	height: 128upx;
+	/* border: 1px solid; */
+	/* 头像圆形显示 */
+	border-radius: 10px;
+	box-shadow:2px 2px 10px #06c;
+}
+.iuser .iuser-center{
+	flex: 6;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.iuser .iuser-center .u-name{
+	font-size: 25px;
+	color: #f2f2f2;
+}
+.iuser .iuser-center .id-div{
+	display: flex;
+	align-items: flex-end;
+	font-size: 12px;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	color: #f2f2f2;
+	border-radius: 20px;
+	border: 1px solid #4792FF;
+	background-color: #4792FF;
+}
+.iuser .iuser-center .u-id{
+	padding-left: 10px;
+}
+.iuser .iuser-right{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex: 2;
+}
+.iuser .iuser-right .iuser-btn{
+	color: #F2F2F2;
+} 
+/* 头部信用户信息end */
+
+.mylists{
+	margin-top: 15px;
+}
+.myitems{
+	/* margin: 5px 15px 5px; */
+}
+.my-item{
+	display: flex;
+	flex-direction: row;
+	height: 100upx;
+	line-height: 100upx;
+	/* 上下内边 左右内边 */
+	/* padding:5px 15px; */
+	/* 
+	上内边距 左右内边 下内边距 
+	*/
+	padding:0px 15px 5px;
+}
+.my-item .item-left{
+	/* flex: 2; */
+}
+.my-item .item-center{
+	margin-left: 10px;
+	flex: 9;
+	font-size: 14px;
+	/* border-bottom: 1px solid #f5f5f5; */
+}
+.my-item .item-right{
+	flex: 1;
+	/* border-bottom: 1px solid #f5f5f5; */
+}
+.xian{
+	width: 100%;
+	height: 15px;
+	background-color: #F5F5F5;
+}
+.mylists2{
+	/* margin-top: 15px; */
+}
+.my-item2{
+	display: flex;
+	flex-direction: row;
+	height: 100upx;
+	line-height: 100upx;
+	padding:0px 15px 5px;
+}
+.my-item2 .item-left2{
+	/* flex: 2; */
+}
+.my-item2 .item-center2{
+	margin-left: 10px;
+	flex: 9;
+	font-size: 14px;
+}
+.my-item2 .item-right2{
+	flex: 1;
+}

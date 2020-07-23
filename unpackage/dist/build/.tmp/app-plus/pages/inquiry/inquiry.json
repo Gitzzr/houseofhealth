@@ -1,0 +1,18 @@
+{
+  "navigationBarBackgroundColor": "#4782FF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "分类",
+  "titleNView": {
+    "buttons": [
+      {
+        "float": "right",
+        "text": "",
+        "fontSrc": "/static/font/font_alijiankang/iconfont.ttf",
+        "fontSize": "22px",
+        "color": "#F2F2F2",
+        "badgeText": "1"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,402 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			// 登录
+		    "path" : "pages/login/login",
+		    "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},
+		{
+			// 注册
+		    "path" : "pages/register/register",
+		    "style" : {
+				// "navigationStyle":"custom",
+				"navigationBarTitleText": "注册",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"app-plus":{
+					// "titleNView":false
+				}
+			}
+		},
+		{	//主页
+			"path": "pages/index/index",
+			"style": {
+				"app-plus":{
+					"titleNView":{  //设置导航栏样式
+						"enablePullDownRefresh":true,
+						"backgroundColor":"#4782FF",  //设置导航栏背景颜色
+						//"type": "transpare",        //透明样式，顶部沉浸式显示
+						"searchInput":{  //设置搜索框样式
+							"align":"left", //非输入状态下文本的对齐方式
+							"backgroundColor":"#f8f8f8",//设置搜索框背景颜色
+							"borderRadius":"16px", //输入框的圆角半径，不可upx单位
+							"placeholder":"请输入搜索内容", //提示文本
+							"placeholderColor":"#aaaaaa", //提示文本颜色
+							"disabled":true  //设置不可输入，可以再去设置跳转到搜索页面
+						},
+						"buttons":[ //自定义导航栏按钮
+							{
+								"float":"left",
+								"text":"首页",
+								"fontSize":"22px",
+								"fontWeight":"bold",
+								"width":"auto",
+								"color":"#F2F2F2"
+							},
+							{
+								//消息图标
+								"float":"right",
+								//text写法很烦，unicode 字符必须以\u开头
+								//阿里图标库的“&#xe765;” 正确转过来的是\ue765
+								//&#xe765;的&#x  好像可以等于\u,总之这样写无错
+								"text":"\ue765", //字体图标库的字体图标对应编码
+								"fontSrc":"/static/font/font_alijiankang/iconfont.ttf", //字体图标库
+								"fontSize":"22px",
+								"color":"#F2F2F2",
+								"badgeText":"1"
+							}
+						]
+					},
+					"pullToRefresh":{
+						"support":true
+					}
+				}
+			}
+		},
+// 		{	//搜索页面
+// 			"path" : "pages/index_search/index_search",
+// 			"style": {
+// // 				"navigationBarShadow":{
+// // 					"colorType":"blue"
+// // 				},
+// 				"app-plus": {
+// 					"titleNView": {
+// 						//"type": "transparent",//透明渐变导航栏
+// 						"searchInput": {
+// 							"autoFocus":true,
+// 							"backgroundColor": "#f5f5f5",//搜索框背景颜色
+// 							"borderRadius": "16px", //输入框圆角
+// 							"placeholder": "请输入搜索内容",
+// 							"disabled": false //disable时点击输入框不置焦，可以跳到新页面搜索
+// 						}
+// 					},
+// 					//zoom-fade-out新窗体从小到大逐渐放大并且从透明到不透明逐渐显示
+// 					"animationType": "zoom-fade-out",  //跳转窗口显示的动画
+// 					"animationDuration": 300
+// 				}
+// 			}
+// 		},
+		 {  
+            "path": "pages/index_search/index_search",  
+            "style": {  
+                "backgroundColorTop": "#ebebeb",  
+                "backgroundColorBottom": "#ebebeb",  
+				"navigationBarTitleText": "搜索",
+                "app-plus": {  
+                    "scrollIndicator": "none",  
+                    "titleNView": {  
+                        // "titleText":"",//不要设置标题  
+                        // "buttons": [{  
+                        //     "text": "取消",  
+                        //     "fontSize": "14"  
+                        // }]  
+                    }  
+                }  
+            }  
+        },
+		{  
+		    "path": "pages/HM-search/HM-search",  
+		    "style": {
+				"navigationBarTitleText": "搜索"
+		    }  
+		},
+		{  
+		    "path": "components/mehaotian-search-revision/mehaotian-search-revision",  
+		    "style": {
+				"navigationBarTitleText": "搜索1"
+		    }  
+		},
+		{	//分类页面
+            "path" : "pages/inquiry/inquiry",
+            "style" : {
+				"navigationBarBackgroundColor":"#4782FF",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"分类",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"float":"right",
+								"text":"\ue765", //字体图标库的字体图标对应编码
+								"fontSrc":"/static/font/font_alijiankang/iconfont.ttf", //字体图标库
+								"fontSize":"22px",
+								"color":"#F2F2F2",
+								"badgeText":"1"
+							}
+						]
+					}
+				}
+			}
+        },
+		{	//我的页面 
+            "path" : "pages/my/my",
+            "style" : {
+				"navigationBarBackgroundColor":"#4782FF",
+				"app-plus":{
+					"titleNView":{
+						"titleSize":"18px",
+						"buttons":[ //自定义导航栏按钮
+							{
+								"float":"right",
+								"text":"\ue753", //字体图标库的字体图标对应编码
+								"fontSrc":"/static/font/font_alijiankang/iconfont.ttf", //字体图标库
+								"fontSize":"22px",
+								"color":"#F2F2F2"
+							},
+							{
+								"float":"right",
+								"text":"\ue765", //字体图标库的字体图标对应编码
+								"fontSrc":"/static/font/font_alijiankang/iconfont.ttf", //字体图标库
+								"fontSize":"22px",
+								"color":"#F2F2F2",
+								"badgeText":"1"
+							}
+						]
+					}
+				}
+			}
+        },
+		{	//我的界面-我的问诊
+		    "path" : "components/sub_my/my_physician_visits/my_physician_visits",
+		    "style" : {
+				"navigationBarTitleText": "我的问诊"
+			}
+		},
+		{	//我的界面-我的医保
+		    "path" : "components/sub_my/my_health_insurance/my_health_insurance",
+		    "style" : {
+				"navigationBarTitleText": "我的医保"
+			}
+		},
+		{
+			//我的页面-设置
+            "path" : "components/sub_my/set/set",
+            "style" : {}
+        },
+        {
+			//我的页面-设置-关于我们
+            "path" : "components/sub_my/about/about",
+            "style" : {}
+        },
+		{
+			//分类页面-免费预约
+		    "path" : "components/appointment/appointment",
+		    "style" : {
+				"navigationBarTitleText":"预约挂号",
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 300
+				}
+			}
+		},
+		{	//分类页面-医生问诊
+		    "path" : "components/doctor_inquiry/doctor_inquiry",
+		    "style" : {
+				"navigationBarTitleText":"医生问诊",
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 300
+				}
+			}
+		},
+		{	//分类页面-健康管理
+		    "path" : "components/healthmanagement/healthmanagement",
+		    "style" : {
+				"navigationBarTitleText":"健康管理",
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 300
+				}
+			}
+		},
+		{	//分类页面-填写病历
+		    "path" : "components/setEMR/setEMR",
+		    "style" : {
+				"navigationBarTitleText": "填写病历"
+			}
+		},
+		{	//分类页面-录入医保
+		    "path" : "components/Health_care/Health_care",
+		    "style" : {
+				"navigationBarTitleText":"录入医保",
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 300
+				}
+			}
+		},
+        {	//提交预约挂号信息
+            "path" : "components/sub_appointment/sub_appointment",
+            "style" : {
+				"navigationBarTitleText":"预约挂号",
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 300
+				}
+			}
+        },
+        {	//医师讲堂详情页面
+            "path" : "components/doctor_hall/doctor_hall",
+            "style" : {
+				"navigationBarTitleText": "医师讲堂"
+			}
+        },
+		{	//找医生
+		    "path" : "components/doctor_information/doctor_information",
+		    "style" : {
+				"navigationBarTitleText":"找医生"
+			}
+		},
+		{	//找药品
+            "path" : "pages/drug/drug",
+            "style" : {
+				"navigationBarTitleText": "找药品"
+			}
+        }
+		,{	//找药品-详情
+		    "path" : "components/drugdetails/drugdetails",
+		    "style" : {}
+		}
+        ,{	//医师讲堂
+            "path" : "pages/lecturehall/lecturehall",
+            "style" : {
+				"navigationBarTitleText": "医师讲堂"
+			}
+        }
+        ,{	//查疾病
+            "path" : "pages/casehistory/casehistory",
+            "style" : {
+				"navigationBarTitleText": "查疾病"
+			}
+        }
+		,{	//查疾病-详情
+		    "path" : "components/casedetails/casedetails",
+		    "style" : {}
+		}
+        ,{	//各tab页的消息通知
+            "path" : "pages/message/message",
+            "style" : {
+				"navigationBarTitleText": "消息通知"
+			}
+        }
+		//========自定义组件========//
+        ,{ //机器人聊天
+            "path" : "pages/robot/robot",
+            "style" : {
+				"navigationBarTitleText": "医生问诊"
+			}
+        },
+		{
+			"path": "components/yszyun-imchat-emoji/chatinput",
+			"style": {
+				"navigationBarTitleText": "uni-app1"
+			}
+		},
+		{
+			"path": "components/yszyun-imchat-emoji/messageshow",
+			"style": {
+				"navigationBarTitleText": "uni-app2"
+			}
+		},
+		{
+			"path": "components/yszyun-imchat-emoji/Emotion/index",
+			"style": {
+				"navigationBarTitleText": "uni-app3"
+			}
+		},
+		//机器人聊天end
+		{	
+			//tables_input自定义组件
+		    "path" : "components/tablesinput/tablesinput",
+		    "style" : {}
+		},
+		//评分组件
+		{
+		    "path" : "components/rate/rate",
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-rate/uni-rate",
+		    "style" : {}
+		},
+		{
+		    "path" : "components/uni-icon/uni-icon",
+		    "style" : {}
+		},
+		//评分组件end
+		//
+		{	
+		    "path" : "pages/uni-product-list/uni-product-list",
+		    "style" : {}
+		}
+        ,{
+            "path" : "components/sub_my/family/family",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/forgetpw/forgetpw",
+            "style" : {
+				"navigationBarTitleText":"找回密码"
+			}
+        }
+        ,{
+            "path" : "components/sub_my/myemr/myemr",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/sub_my/user/user",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		// "navigationStyle":"custom",  //设置全局取消原生导航栏 默认default，改为custom则取消。
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "",  //全局导航栏名称
+		"navigationBarBackgroundColor": "#4782FF"
+	},
+	//底部tab栏
+	"tabBar": {
+		"color":"#bfbfbf",
+		"selectedColor":"#4782FF",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabBarIco/home.png",
+				"selectedIconPath":"static/tabBarIco/home_sel_bule.png",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/inquiry/inquiry",
+				"iconPath":"static/tabBarIco/classify.png",
+				"selectedIconPath":"static/tabBarIco/classify_sel_bule.png",
+				"text":"分类"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"iconPath":"static/tabBarIco/my.png",
+				"selectedIconPath":"static/tabBarIco/my_sel_bule.png",
+				"text":"我的"
+			}
+		]
+		
+	}
+	
+}

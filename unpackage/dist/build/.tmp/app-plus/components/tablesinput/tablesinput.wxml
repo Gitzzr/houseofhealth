@@ -1,0 +1,1 @@
+<view class="g-g-block"><view class="tables"><view class="table_sub"><text>{{header}}</text><view class="input"><input type="text" value="{{value}}"/></view></view></view></view>

@@ -1,0 +1,88 @@
+.tables{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.table_sub{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: 100rpx;
+	line-height: 100rpx;
+	padding:0px 15px 5px;
+}
+.table_sub text{
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	    -ms-flex: 3;
+	        flex: 3;
+	color: #8C8C8C;
+}
+.table_sub .input{
+	-webkit-box-flex: 7;
+	-webkit-flex: 7;
+	    -ms-flex: 7;
+	        flex: 7;
+	/* height: 100upx;
+	line-height: 100upx; */
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.table_sub .input input{
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: right;
+}
+.table_textarea{
+	margin-top: 10px;
+	height: 400rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-content: space-around;
+	    -ms-flex-line-pack: distribute;
+	        align-content: space-around;
+	padding:0px 15px 5px;
+}
+.table_textarea text{
+	color: #8C8C8C;
+}
+.table_textarea textarea{
+	margin: 10px;
+	line-height: 20px;
+	width: 100%;
+}
+.tablebtn button{
+	width: 90%;
+	margin: 10px atuo;
+}
+

@@ -1,0 +1,24 @@
+{
+  "navigationBarBackgroundColor": "#4782FF",
+  "titleNView": {
+    "titleSize": "18px",
+    "buttons": [
+      {
+        "float": "right",
+        "text": "",
+        "fontSrc": "/static/font/font_alijiankang/iconfont.ttf",
+        "fontSize": "22px",
+        "color": "#F2F2F2"
+      },
+      {
+        "float": "right",
+        "text": "",
+        "fontSrc": "/static/font/font_alijiankang/iconfont.ttf",
+        "fontSize": "22px",
+        "color": "#F2F2F2",
+        "badgeText": "1"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

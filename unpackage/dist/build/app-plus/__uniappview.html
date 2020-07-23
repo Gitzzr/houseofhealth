@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"健之小屋","entryPagePath":"pages/login/login.html","page":{"pages/login/login.html":{"window":{"navigationStyle":"custom","navigationBarTextStyle":"black","navigationBarBackgroundColor":"#FFFFFF","titleNView":false,"usingComponents":{}}},"pages/register/register.html":{"window":{"navigationBarTitleText":"注册","navigationBarTextStyle":"black","navigationBarBackgroundColor":"#FFFFFF","usingComponents":{}}},"pages/index/index.html":{"window":{"titleNView":{"enablePullDownRefresh":true,"backgroundColor":"#4782FF","searchInput":{"align":"left","backgroundColor":"#f8f8f8","borderRadius":"16px","placeholder":"请输入搜索内容","placeholderColor":"#aaaaaa","disabled":true},"buttons":[{"float":"left","text":"首页","fontSize":"22px","fontWeight":"bold","width":"auto","color":"#F2F2F2"},{"float":"right","text":"","fontSrc":"/static/font/font_alijiankang/iconfont.ttf","fontSize":"22px","color":"#F2F2F2","badgeText":"1"}]},"pullToRefresh":{"support":true},"usingComponents":{}}},"pages/index_search/index_search.html":{"window":{"backgroundColorTop":"#ebebeb","backgroundColorBottom":"#ebebeb","navigationBarTitleText":"搜索","scrollIndicator":"none","titleNView":{},"usingComponents":{}}},"pages/HM-search/HM-search.html":{"window":{"navigationBarTitleText":"搜索","usingComponents":{"m-search":"/components/mehaotian-search-revision/mehaotian-search-revision"}}},"components/mehaotian-search-revision/mehaotian-search-revision.html":{"window":{"navigationBarTitleText":"搜索1","usingComponents":{}}},"pages/inquiry/inquiry.html":{"window":{"navigationBarBackgroundColor":"#4782FF","navigationBarTextStyle":"white","navigationBarTitleText":"分类","titleNView":{"buttons":[{"float":"right","text":"","fontSrc":"/static/font/font_alijiankang/iconfont.ttf","fontSize":"22px","color":"#F2F2F2","badgeText":"1"}]},"usingComponents":{}}},"pages/my/my.html":{"window":{"navigationBarBackgroundColor":"#4782FF","titleNView":{"titleSize":"18px","buttons":[{"float":"right","text":"","fontSrc":"/static/font/font_alijiankang/iconfont.ttf","fontSize":"22px","color":"#F2F2F2"},{"float":"right","text":"","fontSrc":"/static/font/font_alijiankang/iconfont.ttf","fontSize":"22px","color":"#F2F2F2","badgeText":"1"}]},"usingComponents":{}}},"components/sub_my/my_physician_visits/my_physician_visits.html":{"window":{"navigationBarTitleText":"我的问诊","usingComponents":{}}},"components/sub_my/my_health_insurance/my_health_insurance.html":{"window":{"navigationBarTitleText":"我的医保","usingComponents":{}}},"components/sub_my/set/set.html":{"window":{"usingComponents":{}}},"components/sub_my/about/about.html":{"window":{"usingComponents":{}}},"components/appointment/appointment.html":{"window":{"navigationBarTitleText":"预约挂号","animationType":"zoom-fade-out","animationDuration":300,"usingComponents":{"uni-rate":"/components/uni-rate/uni-rate"}}},"components/doctor_inquiry/doctor_inquiry.html":{"window":{"navigationBarTitleText":"医生问诊","animationType":"zoom-fade-out","animationDuration":300,"usingComponents":{"uni-rate":"/components/uni-rate/uni-rate"}}},"components/healthmanagement/healthmanagement.html":{"window":{"navigationBarTitleText":"健康管理","animationType":"zoom-fade-out","animationDuration":300,"usingComponents":{}}},"components/setEMR/setEMR.html":{"window":{"navigationBarTitleText":"填写病历","usingComponents":{}}},"components/Health_care/Health_care.html":{"window":{"navigationBarTitleText":"录入医保","animationType":"zoom-fade-out","animationDuration":300,"usingComponents":{}}},"components/sub_appointment/sub_appointment.html":{"window":{"navigationBarTitleText":"预约挂号","animationType":"zoom-fade-out","animationDuration":300,"usingComponents":{}}},"components/doctor_hall/doctor_hall.html":{"window":{"navigationBarTitleText":"医师讲堂","usingComponents":{}}},"components/doctor_information/doctor_information.html":{"window":{"navigationBarTitleText":"找医生","usingComponents":{"uni-rate":"/components/uni-rate/uni-rate"}}},"pages/drug/drug.html":{"window":{"navigationBarTitleText":"找药品","usingComponents":{}}},"components/drugdetails/drugdetails.html":{"window":{"usingComponents":{}}},"pages/lecturehall/lecturehall.html":{"window":{"navigationBarTitleText":"医师讲堂","usingComponents":{}}},"pages/casehistory/casehistory.html":{"window":{"navigationBarTitleText":"查疾病","usingComponents":{}}},"components/casedetails/casedetails.html":{"window":{"usingComponents":{}}},"pages/message/message.html":{"window":{"navigationBarTitleText":"消息通知","usingComponents":{}}},"pages/robot/robot.html":{"window":{"navigationBarTitleText":"医生问诊","usingComponents":{"chat-input":"/components/yszyun-imchat-emoji/chatinput","message-show":"/components/yszyun-imchat-emoji/messageshow"}}},"components/yszyun-imchat-emoji/chatinput.html":{"window":{"navigationBarTitleText":"uni-app1","usingComponents":{"emotion":"/components/yszyun-imchat-emoji/Emotion/index"}}},"components/yszyun-imchat-emoji/messageshow.html":{"window":{"navigationBarTitleText":"uni-app2","usingComponents":{}}},"components/yszyun-imchat-emoji/Emotion/index.html":{"window":{"navigationBarTitleText":"uni-app3","usingComponents":{}}},"components/tablesinput/tablesinput.html":{"window":{"usingComponents":{}}},"components/rate/rate.html":{"window":{"usingComponents":{"uni-rate":"/components/uni-rate/uni-rate"}}},"components/uni-rate/uni-rate.html":{"window":{"usingComponents":{"uni-icon":"/components/uni-icon/uni-icon"}}},"components/uni-icon/uni-icon.html":{"window":{"usingComponents":{}}},"pages/uni-product-list/uni-product-list.html":{"window":{"usingComponents":{}}},"components/sub_my/family/family.html":{"window":{"usingComponents":{}}},"pages/forgetpw/forgetpw.html":{"window":{"navigationBarTitleText":"找回密码","usingComponents":{}}},"components/sub_my/myemr/myemr.html":{"window":{"usingComponents":{}}},"components/sub_my/user/user.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"","navigationBarBackgroundColor":"#4782FF"}},"tabBar":{"color":"#bfbfbf","selectedColor":"#4782FF","backgroundColor":"#FFFFFF","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","iconPath":"static/tabBarIco/home.png","selectedIconPath":"static/tabBarIco/home_sel_bule.png","text":"首页"},{"pagePath":"pages/inquiry/inquiry.html","iconPath":"static/tabBarIco/classify.png","selectedIconPath":"static/tabBarIco/classify_sel_bule.png","text":"分类"},{"pagePath":"pages/my/my.html","iconPath":"static/tabBarIco/my.png","selectedIconPath":"static/tabBarIco/my_sel_bule.png","text":"我的"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/login/login","pages/register/register","pages/index/index","pages/index_search/index_search","pages/HM-search/HM-search","components/mehaotian-search-revision/mehaotian-search-revision","pages/inquiry/inquiry","pages/my/my","components/sub_my/my_physician_visits/my_physician_visits","components/sub_my/my_health_insurance/my_health_insurance","components/sub_my/set/set","components/sub_my/about/about","components/appointment/appointment","components/doctor_inquiry/doctor_inquiry","components/healthmanagement/healthmanagement","components/setEMR/setEMR","components/Health_care/Health_care","components/sub_appointment/sub_appointment","components/doctor_hall/doctor_hall","components/doctor_information/doctor_information","pages/drug/drug","components/drugdetails/drugdetails","pages/lecturehall/lecturehall","pages/casehistory/casehistory","components/casedetails/casedetails","pages/message/message","pages/robot/robot","components/yszyun-imchat-emoji/chatinput","components/yszyun-imchat-emoji/messageshow","components/yszyun-imchat-emoji/Emotion/index","components/tablesinput/tablesinput","components/rate/rate","components/uni-rate/uni-rate","components/uni-icon/uni-icon","pages/uni-product-list/uni-product-list","components/sub_my/family/family","pages/forgetpw/forgetpw","components/sub_my/myemr/myemr","components/sub_my/user/user"],"subPackages":[],"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.0.1","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

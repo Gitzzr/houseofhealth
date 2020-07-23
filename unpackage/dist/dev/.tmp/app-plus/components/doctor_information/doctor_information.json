@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "找医生",
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate"
+  }
+}

@@ -1,0 +1,210 @@
+/* 引用阿里字体 */
+
+.submico {
+	font-size: 64upx;
+}
+
+/* 引用阿里字体end */
+
+/* 轮播图 */
+.g-g-blue{
+	padding: 15upx 30upx 20upx;
+}
+.uni-margin-wrap {
+	/* 因为屏幕宽度750upx */
+	width: 690upx;
+}
+
+.swiper {
+	width: 100%;
+	height: 400upx;
+}
+
+.swiper-item {
+	display: block;
+	height: 400upx;
+	line-height: 400upx;
+	text-align: center;
+}
+
+/* 轮播图没图只能设个样式了 */
+.banner3 {
+	background-color: #B3D4FC;
+	font-size: 30px;
+}
+
+.bn-img {
+	width: 100%;
+	height: 400upx;
+}
+
+/* 轮播图end */
+
+/**
+ * 子模块功能
+ */
+.g-g-block-2{
+	padding: 30upx 30upx 15upx;
+	background-color: #4782FF;
+}
+.submodule {
+	/* margin: 0upx 30upx 30upx; */
+	overflow: hidden;
+	color: #F2F2F2;
+}
+
+.submodule-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.sub-item {
+	width: 120upx;
+	height: 120upx;
+	text-align: center;
+}
+
+.sub-item-text {
+	margin: 0;
+	padding: 0;
+	font-size: 26upx;
+}
+
+.sub-item image {
+	width: 100%;
+	height: 100%;
+}
+
+/*子模块end*/
+
+/**
+ * 医师讲堂
+ */
+.doctor-lists {
+	padding: 20upx;
+}
+
+.doctor-list-top {
+	display: flex;
+	flex-direction: row;
+}
+
+/* 医师讲堂左右标题 */
+.d-l-title {
+	flex: 9;
+	font-size: 32upx;
+	font-weight: bold;
+}
+
+.d-r-title {
+	flex: 2;
+	font-size: 32upx;
+}
+
+/* 医师讲堂内容 */
+.doctor-lists .d-items {
+	padding-top: 20upx;
+	display: flex;
+}
+
+/* 内容左 */
+.d-items-left {
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+}
+
+.d-item-title {
+	font-weight: bold;
+	font-size: 32upx;
+	height: 84upx;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.d-item-content {
+	margin-top: 10upx;
+	color: #bfbfbf;
+	width: 432upx;
+	height: 96upx;
+	font-size: 24upx;
+	/*首行缩进*/
+	text-indent: 48upx;
+	/*显示省略符号修剪*/
+	/* text-overflow: ellipsis; */
+	display: -webkit-box;
+	/* 从上向下垂直排列子元素。 */
+	-webkit-box-orient: vertical;
+	/* 显示的行数 */
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.d-item-bottom {
+	height: 48upx;
+	font-size: 24upx;
+	color: #bfbfbf;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+}
+.d-item-bottom .d-item-name{
+	flex: 1;
+	color: #666666;
+}
+.d-item-bottom .d-item-yiyuan{
+	flex: 4;
+	margin-left: 50upx;
+	color: #666666;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+
+/* 内容右 */
+.d-items-right {
+	text-align: center;
+}
+
+.d-items-right .d-item-img {
+	width: 200upx;
+}
+
+.d-items-right .d-item-img image {
+	width: 200upx;
+	height: 200upx;
+}
+
+
+
+
+/* 医师讲堂end */
+
+.green {
+	background-color: green;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+/* iPhone5/SE 宽度为320的适配 */
+@media (max-width:320px){
+	.d-item-content {
+		height: 84upx !important;
+		-webkit-line-clamp: 2;
+	}
+}

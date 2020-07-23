@@ -1,0 +1,33 @@
+.tables{
+	display: flex;
+	flex-direction: column;
+}
+.table_sub{
+	display: flex;
+	flex-direction: row;
+	height: 100upx;
+	line-height: 100upx;
+	padding:0px 15px 5px;
+}
+.table_sub text{
+	flex: 3;
+}
+.table_sub .input{
+	flex: 7;
+	/* height: 100upx;
+	line-height: 100upx; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.table_sub .input input{
+	height: 100upx;
+	line-height: 100upx;
+	text-align: right;
+}
+.tablebtn{
+	margin: 20px;
+}
+.tablebtn button{
+	width: 90%;
+}
